@@ -18,12 +18,12 @@
       <nav>
         <a href="/"
           ><span lang="en" class="logo"
-            ><span class="logo_web">Web</span><span class="logo_studio">Studio</span></span
+            ><span class="logo-web">Web</span><span class="logo-studio">Studio</span></span
           ></a
         >
         <ul class="nav-list list">
           <li>
-            <a class="nav-page-studio" href="/">Студия</a>
+            <a class="nav-page-studio current" href="/">Студия</a>
           </li>
           <li>
             <a class="nav-page-portfolio" href="portfolio.html">Портфолио</a>
@@ -43,15 +43,14 @@
       </ul>
     </header>
     <header class="hero-header">
-      <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+      <h1 class="hero-header-title">Эффективные решения для вашего бизнеса</h1>
       <button type="button" class="hero-btn">
         <span class="hero-btn-text">Заказать услугу</span>
       </button>
     </header>
     <main>
       <section class="hero-section">
-        <!-- Активировать, спрятать через CSS.
-            <h2>Качества компании</h2> -->
+        <h2 class="hero-title">Качества компании</h2>
         <ul class="hero-list list">
           <li>
             <h3 class="hero-list-title">Внимание к деталям</h3>
@@ -60,7 +59,7 @@
             </p>
           </li>
         </ul>
-        <ul>
+        <ul class="hero-list list">
           <li>
             <h3 class="hero-list-title">Пунктуальность</h3>
             <p class="hero-list-text">
@@ -68,7 +67,7 @@
             </p>
           </li>
         </ul>
-        <ul>
+        <ul class="hero-list list">
           <li>
             <h3 class="hero-list-title">Планирование</h3>
             <p class="hero-list-text">
@@ -76,7 +75,7 @@
             </p>
           </li>
         </ul>
-        <ul>
+        <ul class="hero-list list">
           <li>
             <h3 class="hero-list-title">Современные технологии</h3>
             <p class="hero-list-text">
@@ -85,9 +84,9 @@
           </li>
         </ul>
       </section>
-      <section>
-        <h2>Чем мы занимаемся</h2>
-        <ul>
+      <section class="products-section">
+        <h2 class="products-title">Чем мы занимаемся</h2>
+        <ul class="products-list list">
           <li>
             <img src="./images/img_1.jpg" alt="Верстает кода" width="370" height="294" />
           </li>
@@ -106,7 +105,7 @@
       </section>
       <section class="team-section">
         <h2 class="team-title">Наша команда</h2>
-        <ul>
+        <ul class="team-list list">
           <li>
             <img
               src="./images/photo_igor_demyanenko.jpg"
@@ -158,13 +157,17 @@
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="/"><span lang="en" class="team-position">WebStudio</span></a>
+    <footer class="footer">
+      <a href="/"
+        ><span lang="en" class="footer-logo"
+          ><span class="footer-web">Web</span><span class="footer-studio">Studio</span></span
+        ></a
+      >
       <address>
-        <ul>
-          <li>г. Киев, пр-т Леси Украинки, 26</li>
-          <li><a href="meilto:info@example.com">info@example.com</a></li>
-          <li><a href="tel:+380991111111" class="contacts_link">+38 099 111 11 11</a></li>
+        <ul class="footer-list list">
+          <li class="footer-address">г. Киев, пр-т Леси Украинки, 26</li>
+          <li><a class="footer-meil" href="meilto:info@example.com">info@example.com</a></li>
+          <li><a class="footer-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
         </ul>
       </address>
     </footer>

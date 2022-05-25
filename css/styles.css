@@ -1,55 +1,43 @@
 :root {
   --brand-color_1: #2f303a;
   --brand-color_2: #2196f3;
-  --brand-color_3: #f5f4fa;
+  --brand-color_3: #212121;
+  --brand-color_4: #e5e5e5;
+  --brand-color_5: #757575;
+  --brand-color_6: #ffffff;
 }
 
 body {
-  font-family: 'roboto';
-  background-color: #e5e5e5;
+  font-family: 'roboto', 'sans-serif';
+  background-color: var(--brand-color_4);
+  color: var(--brand-color_3);
 }
 
-/* Точки в списках */
+/* Скрытые элементы */
 .list {
   list-style: none;
 }
-
-/* Логотип */
-.logo {
-  position: absolute;
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
+.hero-title,
+.gallery-title {
+  display: none;
 }
-.logo_web {
+
+/* Логотип в шапке и подвале */
+.logo-web,
+.footer-web {
   color: var(--brand-color_2);
 }
-.logo_studio {
-  color: #000000;
+.logo-studio,
+.footer-studio {
+  color: var(--brand-color_3);
 }
 
 /* Шапка */
 .nav-header {
-  position: absolute;
-  width: 1600px;
-  height: 80px;
-  left: 0px;
-  top: 0px;
-  background: #ffffff;
+  background: var(--brand-color_6);
 }
+
 /* Навигация по сайту в шапке */
-.nav-list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
 .nav-page-studio:hover,
 .nav-page-portfolio:hover,
 .nav-page-contacts:hover,
@@ -61,38 +49,13 @@ body {
 .nav-page-studio,
 .nav-page-portfolio,
 .nav-page-contacts {
-  color: #000000;
+  color: var(--brand-color_3);
 }
-.nav-page-studio {
-  position: absolute;
-  width: 49px;
-  height: 16px;
-  left: 453px;
-  top: 32px;
-}
-.nav-page-portfolio {
-  position: absolute;
-  width: 77px;
-  height: 16px;
-  left: 552px;
-  top: 32px;
-}
-.nav-page-contacts {
-  position: absolute;
-  width: 68px;
-  height: 16px;
-  left: 679px;
-  top: 32px;
+.current {
+  color: var(--brand-color_2);
 }
 
 /* Контакты в шапке */
-.nav-list {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
 .contacts-item-meil:hover,
 .contacts-item-tel:hover,
 .contacts-item-meil:focus,
@@ -101,64 +64,59 @@ body {
 }
 .contacts-item-meil,
 .contacts-item-tel {
-  color: #757575;
+  color: var(--brand-color_5);
 }
-.contacts-item-meil {
-  position: absolute;
-  width: 135px;
-  height: 16px;
-  left: 1078px;
-  top: 32px;
-}
-.contacts-item-tel {
-  position: absolute;
-  width: 122px;
-  height: 16px;
-  left: 1263px;
-  top: 32px;
-}
+
 /* Секция с заголовком */
 .hero-header {
-  position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
   background-color: var(--brand-color_1);
 }
-.hero-title {
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
+.hero-header-title {
+  color: var(--brand-color_6);
 }
 .hero-btn {
   border: none;
-  position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 700px;
-  top: 430px;
   background: var(--brand-color_2);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 .hero-btn-text {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--brand-color_6);
+}
+
+/* Серый вторичный текст на сайте */
+.hero-list-text,
+.team-position,
+.gallery-project-text {
+  color: var(--brand-color_5);
+}
+
+/* Секция Чем мы занимаемся */
+.hero-section {
+  background: var(--brand-color_4);
+}
+
+/* Секция Наша команда и проэкты с Портфолио */
+.team-section {
+  background: #f5f4fa;
+}
+
+/* Подвал */
+.footer {
+  background-color: var(--brand-color_1);
+}
+.footer-address {
+  color: var(--brand-color_6);
+}
+.footer-meil,
+.footer-tel {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Портфолио кнопки */
+.gallery-btn:hover,
+.gallery-btn:focus {
+  color: var(--brand-color_6);
+  background-color: var(--brand-color_2);
+}
+.gallery-btn {
+  cursor: pointer;
 }
