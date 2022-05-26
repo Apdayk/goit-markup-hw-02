@@ -8,9 +8,10 @@
 }
 
 body {
-  font-family: 'roboto', 'sans-serif';
   background-color: var(--brand-color_4);
   color: var(--brand-color_3);
+  font-family: 'roboto', 'sans-serif';
+  letter-spacing: 0.03em;
 }
 
 /* Скрытые элементы */
@@ -21,8 +22,17 @@ body {
 .gallery-title {
   display: none;
 }
-
+.link {
+  text-decoration: none;
+}
 /* Логотип в шапке и подвале */
+.logo,
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
 .logo-web,
 .footer-web {
   color: var(--brand-color_2);
@@ -50,6 +60,10 @@ body {
 .nav-page-portfolio,
 .nav-page-contacts {
   color: var(--brand-color_3);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .current {
   color: var(--brand-color_2);
@@ -65,6 +79,10 @@ body {
 .contacts-item-meil,
 .contacts-item-tel {
   color: var(--brand-color_5);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 /* Секция с заголовком */
@@ -73,6 +91,12 @@ body {
 }
 .hero-header-title {
   color: var(--brand-color_6);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .hero-btn {
   border: none;
@@ -80,6 +104,21 @@ body {
 }
 .hero-btn-text {
   color: var(--brand-color_6);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+}
+
+/*Секцая качества компании */
+.hero-section {
+  background: var(--brand-color_4);
+}
+.hero-list-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 /* Серый вторичный текст на сайте */
@@ -88,17 +127,38 @@ body {
 .gallery-project-text {
   color: var(--brand-color_5);
 }
+.hero-list-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.team-position {
+}
+.gallery-project-text {
+}
 
 /* Секция Чем мы занимаемся */
-.hero-section {
-  background: var(--brand-color_4);
+
+.products-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 
 /* Секция Наша команда и проэкты с Портфолио */
 .team-section {
   background: #f5f4fa;
 }
-
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+}
 /* Подвал */
 .footer {
   background-color: var(--brand-color_1);
@@ -110,13 +170,36 @@ body {
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-address,
+.footer-meil,
+.footer-tel {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+}
 
 /* Портфолио кнопки */
-.gallery-btn:hover,
-.gallery-btn:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   color: var(--brand-color_6);
   background-color: var(--brand-color_2);
 }
-.gallery-btn {
+.filter-btn {
+  font-family: roboto;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+}
+
+/* Галерея Портфолио */
+.gallery-project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.gallery-project-text {
+  font-size: 16px;
+  line-height: 1.88;
 }
