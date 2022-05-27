@@ -41,7 +41,9 @@ body {
 .footer-studio {
   color: var(--brand-color_3);
 }
-
+.footer-studio {
+  color: var(--brand-color_6);
+}
 /* Шапка */
 .nav-header {
   background: var(--brand-color_6);
